@@ -14,9 +14,9 @@ In this task, I would like you to conduct a small research project entirely from
 
 ## Task
 
-Construct a simple trading signal on the constituents of the [S&P100](https://en.wikipedia.org/wiki/S%26P_100) (that is, not the index), and then run it through a backtest. Present its PnL and any relevant risk/reward metrics you wish.
+Construct a simple trading signal/strategy on options of the [S&P500](https://en.wikipedia.org/wiki/S%26P_500) (that is, not the index), and then run it through a backtest. Present its PnL and any relevant risk/reward metrics you wish.
 
-_Note_: The signal does not need to carry any IP (intellectual property). You can even implement [momentum](<https://en.wikipedia.org/wiki/Momentum_(technical_analysis)>) as described by Wikipedia. In fact, do this, if you have no prior trading experience.
+_Note_: The signal does not need to carry any IP (intellectual property). You can implement for instance a [Butterfly](<https://en.wikipedia.org/wiki/Butterfly>) strategy as described by Wikipedia, or any strategy of your choice.
 
 You will need to fetch the data to support this work yourself. Use a library of your choice, but if you have no prior convinctions, try [yfinance](https://github.com/ranaroussi/yfinance). This would necessitate you learning to use a new tool, which, invariably will happen on the job too.
 
