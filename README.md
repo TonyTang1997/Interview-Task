@@ -29,6 +29,39 @@ Simplifying assumptions:
 
 Feel free to make further simplifying assumptions - they are not forbidden. Just be prepared to explain why you did it.
 
-## Submission
+# Submission
 
 Upload your code into a new repo under the `DavidCico-HexTrust` account. If you are unable to do this, then email your code to `david.cicoria@hextrust.com`.
+
+
+### Solution
+
+First few days were spent trying to collect historical S&P500 opiton chain data. There is no simple free api for querying these data.
+
+I have tried to crawl these data from yfinance or barchart.com, but amount of data is very large and it is extremely hard to locate meaningful options chain data.
+
+At the end, I believe that it is not feasible to get historical options chain data for S&P500. 
+
+Instead, I am going to use the free 1 month opitons chain data on derbit, provided by tardis.dev https://legacy.deribit.com/pages/information/tardis
+
+My works include these parts
+
+### Data Processing
+
+These option chain data are very large even just for 1 month data, I need to grep the data for options with specific type / strike / maturity.
+
+### Backtest for Butterfly
+
+The Butterfly strategy is backtested on ETH opitons from 2020-07-01 to 2020-07-31, assuming that these options are purchased at 2020-07-01 0000 and hold thill expiration.
+Rather close to atm options are picked because they are better liquidty. Different risk metrics are calculated using the pyfolio library.
+
+### Analysis on Volatility
+
+As long butterfly is betting on future volaility to be lower than the implied volatility, the histrical atm volatillity is visualled to check whether this assumption is correct or not.
+Simple skew and the otm/atm/itm implied volatility gap analysis are done too.
+
+# Options Arbitrage
+
+Check if there exist any put-call parity arbitrage oppunitiy on ETH options. 
+
+
