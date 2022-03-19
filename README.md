@@ -44,6 +44,8 @@ At the end, I believe that it is not feasible to get historical options chain da
 
 Instead, I am going to use the free 1 month opitons chain data on derbit, provided by tardis.dev https://legacy.deribit.com/pages/information/tardis
 
+All the codes are developed on colab https://colab.research.google.com/drive/1n6os7njnaHF9SBhLsetsW9QJ_jgNCg0-?usp=sharing
+
 My works include these parts
 
 ### Data Processing
